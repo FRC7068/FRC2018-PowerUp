@@ -67,7 +67,7 @@ public class RobotMap {
         driveTrainArcadeTrain.setSafetyEnabled(false);
         driveTrainArcadeTrain.setExpiration(0.1);
         driveTrainArcadeTrain.setMaxOutput(1.0);
-        driveTrainArcadeTrain.setDeadband(0.15);
+        driveTrainArcadeTrain.setDeadband(0.0);
         
         leftIntakeMotor = new Spark(0);
         LiveWindow.addActuator("Intake","motorLeft", (Spark) leftIntakeMotor );

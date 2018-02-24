@@ -52,9 +52,9 @@ public class Robot extends TimedRobot {
         liftElevator = new LiftElevator();
         SmartDashboard.putData(liftElevator);
         
-       // UsbCamera visionCam = CameraServer.getInstance().startAutomaticCapture();
-      //  visionCam.setFPS(20);
-      //  visionCam.setResolution(640 , 480);
+        UsbCamera visionCam = CameraServer.getInstance().startAutomaticCapture();
+        visionCam.setFPS(20);
+        visionCam.setResolution(640 , 480);
         
         // OI must be constructed after subsystems. If the OI creates Commands
         //(which it very likely will), subsystems are not guaranteed to be
